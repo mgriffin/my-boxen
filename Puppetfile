@@ -36,3 +36,8 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "osx", "1.5.0"
+github "zsh", "1.0.0"
+github "iterm2", "1.0.3"
+github "alfred", "1.1.2"
