@@ -38,6 +38,5 @@ class people::mgriffin {
     require => Repository["${::boxen_srcdir}/puppet"],
   }
 
-  include iterm2::stable
-  include alfred
+  include people::mgriffin::applications
 }
