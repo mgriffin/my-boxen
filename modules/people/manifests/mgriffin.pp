@@ -1,23 +1,8 @@
 class people::mgriffin {
 
+  $my_homedir = "/Users/${::luser}"
+
   notify { 'class people::mgriffin declared': }
-
-  package { 'zsh':
-    ensure => installed,
-  }
-
-  # Changes the default shell to the zsh version we get from Homebrew
-  # Uses the osx_chsh type out of boxen/puppet-osx
-  osx_chsh { $::luser:
-    shell   => '/opt/boxen/homebrew/bin/zsh',
-    require => Package['zsh'],
-  }
-
-  file_line { 'add zsh to /etc/shells':
-    path    => '/etc/shells',
-    line    => "${boxen::config::homebrewdir}/bin/zsh",
-    require => Package['zsh'],
-  }
 
   ##################################
   ## Facter, Puppet, and Envpuppet##
@@ -39,4 +24,16 @@ class people::mgriffin {
   }
 
   include people::mgriffin::applications
+
+  # My dotfile repository
+  repository { "${my_homedir}/src/dotfiles":
+    source => 'mgriffin/dotfiles',
+  }
+
+  file { "${my_homedir}/.vimrc":
+    ensure => link,
+    mode   => '0644',
+    target => "${my_homedir}/src/dotfiles/vimrc",
+    require => Repository["${my_homedir}/src/dotfiles"],
+  }
 }
