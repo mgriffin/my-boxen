@@ -34,6 +34,11 @@ GITHUBTARBALL
     git (1.2.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-handbrake
+  specs:
+    handbrake (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.4.1)
@@ -84,6 +89,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vlc
+  specs:
+    vlc (1.0.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.0)
@@ -116,6 +126,7 @@ DEPENDENCIES
   dropbox (= 1.1.1)
   gcc (= 2.0.1)
   git (= 1.2.5)
+  handbrake (= 1.0.1)
   homebrew (= 1.4.1)
   hub (= 1.0.3)
   inifile (= 1.0.0)
@@ -129,6 +140,7 @@ DEPENDENCIES
   ruby (= 6.2.0)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
+  vlc (= 1.0.3)
   xquartz (= 1.1.0)
   zsh (= 1.0.0)
 
