@@ -1,6 +1,6 @@
 class people::mgriffin::applications {
   include zsh
-  include iterm2::stable
+  include iterm2::dev
   include alfred
   include dropbox
   include lastpass
