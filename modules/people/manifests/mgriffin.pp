@@ -2,6 +2,9 @@ class people::mgriffin {
 
   $my_homedir = "/Users/${::luser}"
 
+  include osx::global::expand_print_dialog
+  include osx::global::expand_save_dialog
+
   include people::mgriffin::applications
 
   # My dotfile repository
