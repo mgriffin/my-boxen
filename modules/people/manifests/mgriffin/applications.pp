@@ -12,4 +12,16 @@ class people::mgriffin::applications {
   #  source => 'http://download.videolan.org/libdvdcss/1.2.12/macosx/libdvdcss.pkg',
   #  provider => pkg
   #}
+
+  package { 'GarminCommunicatorPlugin':
+    ensure => installed,
+    provider => pkgdmg,
+    source => 'http://www8.garmin.com/software/CommunicatorPluginforMac_404.dmg'
+  }
+
+  package { 'GarminAntAgent':
+    ensure => installed,
+    provider => pkgdmg,
+    source => 'http://www8.garmin.com/software/ANTAgentforMac_222.dmg'
+  }
 }
