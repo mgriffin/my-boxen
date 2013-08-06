@@ -7,6 +7,7 @@ class people::mgriffin::applications {
   include handbrake
   include vlc
   include spotify
+  include virtualbox
 
   #package { 'libdvdcss':
   #  source => 'http://download.videolan.org/libdvdcss/1.2.12/macosx/libdvdcss.pkg',
