@@ -24,4 +24,10 @@ class people::mgriffin::applications {
     provider => pkgdmg,
     source => 'http://www8.garmin.com/software/ANTAgentforMac_222.dmg'
   }
+
+  package { 'GPGSuite':
+    ensure => installed,
+    provider => pkgdmg,
+    source => 'https://s3.amazonaws.com/gpgtools/GPG%20Suite%20-%202013.07.31.dmg'
+  }
 }
