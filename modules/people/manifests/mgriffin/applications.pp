@@ -8,6 +8,8 @@ class people::mgriffin::applications {
   include vlc
   include spotify
   include virtualbox
+  include vagrant
+  include mactex::basic
 
   #package { 'libdvdcss':
   #  source => 'http://download.videolan.org/libdvdcss/1.2.12/macosx/libdvdcss.pkg',
