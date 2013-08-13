@@ -10,6 +10,12 @@ class people::mgriffin::applications {
   include virtualbox
   include vagrant
   include mactex::basic
+  include wget
+  include libtool
+  include pkgconfig
+  include pcre
+  include libpng
+  include php::5_4
 
   #package { 'libdvdcss':
   #  source => 'http://download.videolan.org/libdvdcss/1.2.12/macosx/libdvdcss.pkg',
@@ -32,5 +38,9 @@ class people::mgriffin::applications {
     ensure => installed,
     provider => pkgdmg,
     source => 'https://s3.amazonaws.com/gpgtools/GPG%20Suite%20-%202013.07.31.dmg'
+  }
+
+  class { 'php::global':
+    version => '5.4.17'
   }
 }
