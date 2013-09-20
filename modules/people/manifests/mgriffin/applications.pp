@@ -16,6 +16,8 @@ class people::mgriffin::applications {
   include pcre
   include libpng
   include php::5_4
+  include transmission
+  include tmux
 
   #package { 'libdvdcss':
   #  source => 'http://download.videolan.org/libdvdcss/1.2.12/macosx/libdvdcss.pkg',

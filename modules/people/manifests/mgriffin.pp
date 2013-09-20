@@ -43,4 +43,11 @@ class people::mgriffin {
     target => "${my_homedir}/src/dotfiles/gitconfig",
     require => Repository["${my_homedir}/src/dotfiles"],
   }
+
+  file { "${my_homedir}/.tmux.conf":
+    ensure => link,
+    mode   => '0644',
+    target => "${my_homedir}/src/dotfiles/tmux.conf",
+    require => Repository["${my_homedir}/src/dotfiles"],
+  }
 }
