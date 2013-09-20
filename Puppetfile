@@ -13,7 +13,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen",      "3.0.1"
+github "boxen",      "3.0.2"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -26,10 +26,10 @@ github "homebrew",   "1.4.1"
 github "hub",        "1.0.3"
 github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",      "1.4.2"
-github "nodejs",     "3.2.8"
+github "nodejs",     "3.2.9"
 github "openssl",    "1.0.0"
 github "repository", "2.2.0"
-github "ruby",       "6.2.0"
+github "ruby",       "6.3.4"
 github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 github "xquartz",    "1.1.0"
@@ -40,11 +40,11 @@ github "xquartz",    "1.1.0"
 github "osx", "1.5.0"
 github "zsh", "1.0.0"
 github "iterm2", "1.0.3"
-github "alfred", "1.1.2"
+github "alfred", "1.1.4"
 github "dropbox", "1.1.1"
 github "lastpass", "1.1.0", :repo => "dieterdemeyer/puppet-lastpass"
 github "handbrake", "1.0.1"
-github "vlc", "1.0.3"
+github "vlc", "1.0.4"
 github "spotify", "1.0.1"
 github "virtualbox", "1.0.5"
 github "vagrant", "2.0.10"
