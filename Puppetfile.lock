@@ -29,6 +29,11 @@ GITHUBTARBALL
     dropbox (1.1.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-flux
+  specs:
+    flux (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (2.0.1)
@@ -67,6 +72,11 @@ GITHUBTARBALL
   remote: boxen/puppet-libtool
   specs:
     libtool (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-mou
+  specs:
+    mou (1.1.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -184,6 +194,7 @@ DEPENDENCIES
   boxen (= 3.0.2)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.1)
+  flux (= 1.0.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
   handbrake (= 1.0.1)
@@ -195,6 +206,7 @@ DEPENDENCIES
   libpng (= 1.0.0)
   libtool (= 1.0.0)
   mactex (= 0.1.0)
+  mou (= 1.1.3)
   nginx (= 1.4.2)
   nodejs (= 3.2.9)
   openssl (= 1.0.0)
