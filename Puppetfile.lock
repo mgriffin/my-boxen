@@ -6,7 +6,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
-    alfred (1.1.4)
+    alfred (1.1.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-autoconf
@@ -141,12 +141,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (2.0.10)
+    vagrant (3.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
-    virtualbox (1.0.5)
+    virtualbox (1.0.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-vlc
@@ -189,7 +189,7 @@ GITHUBTARBALL
     stdlib (4.1.0)
 
 DEPENDENCIES
-  alfred (= 1.1.4)
+  alfred (= 1.1.6)
   autoconf (= 1.0.0)
   boxen (= 3.0.2)
   dnsmasq (= 1.0.0)
@@ -221,8 +221,8 @@ DEPENDENCIES
   sudo (= 1.0.0)
   tmux (= 1.0.2)
   transmission (= 1.0.0)
-  vagrant (= 2.0.10)
-  virtualbox (= 1.0.5)
+  vagrant (= 3.0.0)
+  virtualbox (= 1.0.9)
   vlc (= 1.0.4)
   wget (= 1.0.0)
   xquartz (= 1.1.0)
