@@ -59,6 +59,11 @@ GITHUBTARBALL
     hub (1.0.3)
 
 GITHUBTARBALL
+  remote: boxen/puppet-imagemagick
+  specs:
+    imagemagick (1.2.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
     iterm2 (1.0.3)
@@ -200,6 +205,7 @@ DEPENDENCIES
   handbrake (= 1.0.1)
   homebrew (= 1.4.1)
   hub (= 1.0.3)
+  imagemagick (= 1.2.1)
   inifile (= 1.0.0)
   iterm2 (= 1.0.3)
   lastpass (= 1.1.0)

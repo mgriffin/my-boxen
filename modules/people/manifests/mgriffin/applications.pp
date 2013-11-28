@@ -21,6 +21,7 @@ class people::mgriffin::applications {
   include mou
   include mou::themes
   include flux
+  include imagemagick
 
   #package { 'libdvdcss':
   #  source => 'http://download.videolan.org/libdvdcss/1.2.12/macosx/libdvdcss.pkg',
