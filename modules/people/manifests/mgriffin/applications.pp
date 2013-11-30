@@ -49,4 +49,8 @@ class people::mgriffin::applications {
   class { 'php::global':
     version => '5.4.17'
   }
+
+  class { 'nodejs::global':
+    version => 'v0.10'
+  }
 }
