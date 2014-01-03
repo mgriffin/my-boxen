@@ -15,6 +15,7 @@ class people::mgriffin::applications {
   include pkgconfig
   include pcre
   include libpng
+  include mysql
   include php::5_4
   include transmission
   include tmux
@@ -44,7 +45,7 @@ class people::mgriffin::applications {
   package { 'GPGSuite':
     ensure => installed,
     provider => pkgdmg,
-    source => 'https://s3.amazonaws.com/gpgtools/GPG%20Suite%20-%202013.07.31.dmg'
+    source => 'https://s3.amazonaws.com/gpgtools/GPG%20Suite%20-%202013.10.22.dmg'
   }
 
   class { 'php::global':
