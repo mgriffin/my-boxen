@@ -17,6 +17,7 @@ class people::mgriffin::applications {
   include libpng
   include mysql
   include php::5_4
+  include php::composer
   include transmission
   include tmux
   include mou
@@ -24,6 +25,7 @@ class people::mgriffin::applications {
   include flux
   include imagemagick
   include skype
+  include calibre
 
   #package { 'libdvdcss':
   #  source => 'http://download.videolan.org/libdvdcss/1.2.12/macosx/libdvdcss.pkg',
@@ -50,6 +52,10 @@ class people::mgriffin::applications {
 
   class { 'php::global':
     version => '5.4.17'
+  }
+  php::extension::xdebug { "xdebug for 5.4.17":
+    php => '5.4.17',
+    version => '2.2.1'
   }
 
   class { 'nodejs::global':
