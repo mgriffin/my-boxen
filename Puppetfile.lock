@@ -24,6 +24,11 @@ GITHUBTARBALL
     chrome (1.1.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-colloquy
+  specs:
+    colloquy (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
@@ -77,6 +82,11 @@ GITHUBTARBALL
   remote: boxen/puppet-imagemagick
   specs:
     imagemagick (1.2.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-inkscape
+  specs:
+    inkscape (1.0.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
@@ -228,6 +238,7 @@ DEPENDENCIES
   boxen (= 3.3.4)
   calibre (= 2.0.0)
   chrome (= 1.1.2)
+  colloquy (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.2.0)
   flux (= 1.0.0)
@@ -240,6 +251,7 @@ DEPENDENCIES
   hub (= 1.0.3)
   imagemagick (= 1.2.1)
   inifile (= 1.0.0)
+  inkscape (= 1.0.3)
   iterm2 (= 1.0.6)
   lastpass (= 1.1.0)
   libpng (= 1.0.0)

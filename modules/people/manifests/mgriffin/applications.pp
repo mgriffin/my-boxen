@@ -27,6 +27,8 @@ class people::mgriffin::applications {
   include skype
   include calibre
   include chrome
+  include colloquy
+  include inkscape
 
   #package { 'libdvdcss':
   #  source => 'http://download.videolan.org/libdvdcss/1.2.12/macosx/libdvdcss.pkg',
