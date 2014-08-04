@@ -16,7 +16,7 @@ class people::mgriffin::applications {
   include pcre
   include libpng
   include mysql
-  include php::5_4
+  include php::5_5
   include php::composer
   include transmission
   include tmux
@@ -29,6 +29,7 @@ class people::mgriffin::applications {
   include chrome
   include colloquy
   include inkscape
+  ###include gdb
 
   #package { 'libdvdcss':
   #  source => 'http://download.videolan.org/libdvdcss/1.2.12/macosx/libdvdcss.pkg',
@@ -54,12 +55,12 @@ class people::mgriffin::applications {
   }
 
   class { 'php::global':
-    version => '5.4.17'
+    version => '5.5.13'
   }
-  php::extension::xdebug { "xdebug for 5.4.17":
-    php => '5.4.17',
-    version => '2.2.1'
-  }
+  #php::extension::xdebug { "xdebug for 5.5.13":
+  #  php => '5.5.13',
+  #  version => '2.2.5'
+  #}
 
   class { 'nodejs::global':
     version => 'v0.10'
