@@ -57,10 +57,10 @@ class people::mgriffin::applications {
   class { 'php::global':
     version => '5.5.13'
   }
-  #php::extension::xdebug { "xdebug for 5.5.13":
-  #  php => '5.5.13',
-  #  version => '2.2.5'
-  #}
+  php::extension::xdebug { "xdebug for 5.5.13":
+    php => '5.5.13',
+    version => '2.2.4',
+  }
 
   class { 'nodejs::global':
     version => 'v0.10'
