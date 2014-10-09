@@ -30,6 +30,7 @@ class people::mgriffin::applications {
   include colloquy
   include inkscape
   ###include gdb
+  include jq
 
   #package { 'libdvdcss':
   #  source => 'http://download.videolan.org/libdvdcss/1.2.12/macosx/libdvdcss.pkg',
